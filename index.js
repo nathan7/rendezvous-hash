@@ -26,5 +26,5 @@ function select(key, obj) {
     }
   }
 
-  return target
+  return obj[target]
 }
