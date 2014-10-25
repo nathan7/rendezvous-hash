@@ -1,0 +1,22 @@
+{
+  "name": "rendezvous-hash",
+  "version": "1.0.0",
+  "description": "an implementation of Rendezvous hashing (highest random weight)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathan7/rendezvous-hash.git"
+  },
+  "keywords": [
+    "rendezvous",
+    "sharding",
+    "partitioning",
+    "shard"
+  ],
+  "author": "Nathan Zadoks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathan7/rendezvous-hash/issues"
+  },
+  "homepage": "https://github.com/nathan7/rendezvous-hash"
+}
