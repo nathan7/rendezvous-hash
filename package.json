@@ -1,6 +1,6 @@
 {
   "name": "rendezvous-hash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "an implementation of Rendezvous hashing (highest random weight)",
   "main": "index.js",
   "repository": {
