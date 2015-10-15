@@ -1,7 +1,7 @@
 'use strict';
-module.exports = select
-var crypto = require('crypto')
-  , separator = new Buffer('\0')
+//module.exports = select
+var crypto = require('crypto'),
+	separator = new Buffer('\0');
 
 function rank(shardId, key) {
   return crypto
@@ -15,11 +15,11 @@ function rank(shardId, key) {
 
 
 function select(key, obj) {
-  var target
-    , targetRank = 0
+  var target;
+  var targetRank = 0;
 
-  for (var shardId in obj) if ({}.hasOwnProperty.call(obj, shardId)) {
-    var shardRank = rank(shardId, key)
+  for (var shardId in obj){
+    var shardRank = rank(shardId, key);
     if (shardRank > targetRank) {
       target = shardId
       targetRank = shardRank
@@ -28,3 +28,4 @@ function select(key, obj) {
 
   return obj[target]
 }
+exports.select = select;
